@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>电商运营 AI 助手</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="chat-card">
+      <header class="chat-header">
+        <div>
+          <h1>电商运营 AI 助手</h1>
+          <p>发货、退换货、运费、保修、开票等问题快速解答</p>
+        </div>
+        <span class="status">在线</span>
+      </header>
+
+      <div id="chatBox" class="chat-box">
+        <div class="message assistant">
+          <div class="bubble">您好，我是店铺售后 AI 助手。您可以咨询发货时间、退换货、运费、保修、发票或转人工客服。</div>
+        </div>
+      </div>
+
+      <div class="quick-questions">
+        <button data-question="什么时候发货？">发货时间</button>
+        <button data-question="商品不想要了可以退货吗？">退货政策</button>
+        <button data-question="尺码不合适可以换货吗？">换货</button>
+        <button data-question="怎么转接人工客服？">人工客服</button>
+      </div>
+
+      <form id="chatForm" class="chat-form">
+        <input id="messageInput" type="text" maxlength="1000" placeholder="请输入您的问题，例如：多久能到货？" autocomplete="off" />
+        <button type="submit">发送</button>
+      </form>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
